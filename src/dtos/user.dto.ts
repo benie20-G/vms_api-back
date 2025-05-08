@@ -13,7 +13,7 @@ export class CreateUserDTO {
     email: string;
 
     @IsNotEmpty()
-    @Matches(/^\+250\d{9}$/, {
+    @Matches(/^\+2507\d{8}$/, {
         message: 'Mobile number must start with "+250" and have 9 digits after that.',
     })
     readonly telephone: string;
